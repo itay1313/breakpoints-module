@@ -1,0 +1,53 @@
+$xsBreakpoint: 576px;
+$smBreakpoint: 767px;
+$mdBreakpoint: 1024px;
+$lgBreakpoint: 1290px;
+$xlBreakpoint: 1440px;
+
+// Mixin for mobile-only styles (up to small screens)
+@mixin max-sm {
+	@media only screen and (max-width: $smBreakpoint) {
+		@content;
+	}
+}
+
+// Mixin for mobile-only styles (up to extra small screens)
+@mixin max-xs {
+	@media only screen and (max-width: $xsBreakpoint) {
+		@content;
+	}
+}
+
+@mixin max-xl {
+	@media only screen and (max-width: $xlBreakpoint) {
+		@content;
+	}
+}
+
+// Mixin for medium breakpoint styles
+@mixin min-md {
+	@media only screen and (min-width: $mdBreakpoint) {
+		@content;
+	}
+}
+
+// Mixin for large breakpoint styles
+@mixin min-lg {
+	@media only screen and (min-width: $lgBreakpoint) {
+		@content;
+	}
+}
+
+// Mixin for extra large breakpoint styles
+@mixin min-xl {
+	@media only screen and (min-width: $xlBreakpoint) {
+		@content;
+	}
+}
+
+// Mixin for iPad-only styles
+@mixin between-sm-md {
+	@media only screen and (min-width: $smBreakpoint) and (max-width: $mdBreakpoint) {
+		@content;
+	}
+}
