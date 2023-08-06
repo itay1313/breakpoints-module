@@ -1,6 +1,8 @@
+
 # My breakpoints-module - Itay Haephrati
 
 // Using CSS variables
+
 @import './assets/styles/breakpoints.module.scss';
 
 :root {
